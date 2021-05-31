@@ -34,8 +34,8 @@ connection.query(insert_sql)
 app.get('/', (req, res) => {
     getNames()
     .then(function(results){
-        html = "<h1>Full Cycle</h1>";
-        html = "<h2>" + results.length + " names found</h2>";
+        html = "<h1>Full Cycle Rocks!</h1>";
+        html += "<h2>" + results.length + " names found</h2>";
         html += "<ul>";
         for (var i in results) html += "<li>" + results[i].name + "</li>";
         html += "</ul>";
